@@ -13,10 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           submodules: recursive # ref: https://remarkablemark.org/blog/2021/02/21/github-actions-checkout-submodules/
-          token: ${{ secrets.ACCESS_TOKEN }} # ref: https://github.com/actions/checkout/issues/287#issuecomment-780483104
+          token: ${{ secrets.ACCESS_TOKEN || github.token }} # 备选方案：如果 ACCESS_TOKEN 不可用则使用默认 token
+          fetch-depth: 0
 
       - name: Install Vercel CLI
         run: npm install --global vercel@canary
