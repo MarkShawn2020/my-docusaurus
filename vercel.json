@@ -1,6 +1,0 @@
-{
-  "buildCommand": "cd my-website && npm run build",
-  "outputDirectory": "my-website/build",
-  "framework": null,
-  "installCommand": "cd my-website && npm install"
-}
