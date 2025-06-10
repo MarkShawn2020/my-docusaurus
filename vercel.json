@@ -1,9 +1,6 @@
 {
-  "functions": {
-    "app/**": {
-      "runtime": "@vercel/node@22.x"
-    }
-  },
   "buildCommand": "cd my-website && npm run build",
-  "outputDirectory": "my-website/build"
+  "outputDirectory": "my-website/build",
+  "framework": null,
+  "installCommand": "cd my-website && npm install"
 }
