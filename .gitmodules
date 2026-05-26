@@ -1,4 +1,4 @@
 [submodule "my-website"]
 	path = my-website
-	url = git@github.com:markshawn2020/my-website.git
+	url = https://github.com/markshawn2020/my-website.git
 	branch = main
