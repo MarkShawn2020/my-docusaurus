@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "",
+  "buildCommand": "mkdir -p my-website/build && printf '<!doctype html><title>Proxy</title>' > my-website/build/index.html",
+  "outputDirectory": "my-website/build",
+  "routes": [
+    { "src": "/docs/文集/2020-06-28-盛锦叶/?", "status": 404 },
+    { "src": "/docs/%E6%96%87%E9%9B%86/2020-06-28-%E7%9B%9B%E9%94%A6%E5%8F%B6/?", "status": 404 },
+    { "src": "/(.*)", "dest": "https://docusaurus-e8modrjwx-markshawn2020s-projects.vercel.app/$1" }
+  ]
+}
